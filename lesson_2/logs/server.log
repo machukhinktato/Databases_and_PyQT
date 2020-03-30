@@ -1,10 +1,2 @@
-2020-03-23 15:44:08,101 DEBUG decos.py called function argument_parser with params () , {}. Call from module __main__
-2020-03-23 15:44:08,104 INFO server.py server launched, port to connect: 7777, connections from: . If address not specified, all connections will be available
-2020-03-23 15:44:08,428 INFO server.py connection with address ('127.0.0.1', 59215) stabilized
-2020-03-23 15:44:08,431 INFO server.py connection with address ('127.0.0.1', 59216) stabilized
-2020-03-23 15:44:08,934 DEBUG decos.py called function get_message with params (<socket.socket fd=644, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59215)>,) , {}. Call from module shared.utils
-2020-03-23 15:44:08,945 DEBUG server.py Parsing a message from a client : {'action': 'presence', 'time': 1584967448.4285173, 'user': {'account_name': '1'}}
-2020-03-23 15:44:08,946 DEBUG decos.py called function send_message with params (<socket.socket fd=644, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59215)>, {'response': 200}) , {}. Call from module shared.utils
-2020-03-23 15:44:08,947 DEBUG decos.py called function get_message with params (<socket.socket fd=680, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59216)>,) , {}. Call from module shared.utils
-2020-03-23 15:44:08,947 DEBUG server.py Parsing a message from a client : {'action': 'presence', 'time': 1584967448.437759, 'user': {'account_name': '2'}}
-2020-03-23 15:44:08,948 DEBUG decos.py called function send_message with params (<socket.socket fd=680, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 59216)>, {'response': 200}) , {}. Call from module shared.utils
+2020-03-30 09:00:18,072 DEBUG decos.py called function get_message with params (<socket.socket fd=676, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 7777), raddr=('127.0.0.1', 51991)>,) , {}. Call from module shared.utils
+2020-03-30 09:00:18,077 INFO server.py user ('127.0.0.1', 51991) logged out

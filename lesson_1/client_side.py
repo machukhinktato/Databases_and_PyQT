@@ -124,7 +124,8 @@ def user_online(from_socket, client_name):
             break
         else:
             print('Unknown command, please try again.\n'
-                  'h (help) - show list of useful commands')
+                  'To call help(show list of useful commands)'
+                  'Enter - h : ')
 
 
 @log

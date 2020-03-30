@@ -1,3 +1,5 @@
+""" Program runner"""
+
 import subprocess
 
 PROCESS = []
@@ -10,12 +12,15 @@ while True:
     if ACTION == 'q':
         break
     elif ACTION == 's':
-        clients_count = int(input('Enter number of console to launch: '))
+        clients_count = int(input('Enter number of consoles to launch: '))
         # Запускаем сервер!
-        PROCESS.append(subprocess.Popen('python server_side.py', creationflags=subprocess.CREATE_NEW_CONSOLE))
-        # Запускаем клиентов:
+        PROCESS.append(subprocess.Popen(
+            'python server.py',
+            creationflags=subprocess.CREATE_NEW_CONSOLE))
         for i in range(clients_count):
-            PROCESS.append(subprocess.Popen(f'python client_side.py -n {i + 1}', creationflags=subprocess.CREATE_NEW_CONSOLE))
+            PROCESS.append(subprocess.Popen(
+                f'python client.py -n {i + 1}',
+                creationflags=subprocess.CREATE_NEW_CONSOLE))
     elif ACTION == 'x':
         while PROCESS:
             PROCESS.pop().kill()
