@@ -968,3 +968,174 @@ rs: ('3',) and {}, from module __main__, and function client_initializer().
 2020-03-20 15:11:39,676 INFO client_side.py 
  Received message from user test2: 
  hi
+2020-03-20 15:17:14,215 DEBUG decorators.py function argument_parser with parameters: () and {}, from module __main__, and function client_initializer().
+2020-03-20 15:17:14,215 INFO client_side.py client application was launched with parameters: server address: 127.0.0.1 port: 7777, mode: 2
+2020-03-20 15:17:14,216 DEBUG decorators.py function argument_parser with parameters: () and {}, from module __main__, and function client_initializer().
+2020-03-20 15:17:14,216 INFO client_side.py client application was launched with parameters: server address: 127.0.0.1 port: 7777, mode: 1
+2020-03-20 15:17:14,217 DEBUG client_side.py formed presence message from user 2
+2020-03-20 15:17:14,217 DEBUG decorators.py function launch_presence with parameters: ('2',) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:17:14,218 DEBUG client_side.py formed presence message from user 1
+2020-03-20 15:17:14,218 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52063), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1584706634.2176034, 'user': {'account_name': '2'}}) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:17:14,219 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52064), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1584706634.2176034, 'user': {'account_name': '1'}}) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:17:14,219 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52063), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:17:14,219 DEBUG client_side.py analyzing server request: {'response': 200} 
+2020-03-20 15:17:14,220 DEBUG decorators.py function server_response with parameters: ({'response': 200},) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:17:14,220 INFO client_side.py received response from server 200 : OK
+2020-03-20 15:17:14,221 DEBUG client_side.py process started
+2020-03-20 15:17:14,222 DEBUG decorators.py function helper with parameters: () and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:17:14,723 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52064), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:17:14,724 DEBUG client_side.py analyzing server request: {'response': 200} 
+2020-03-20 15:17:14,725 DEBUG decorators.py function server_response with parameters: ({'response': 200},) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:17:14,725 INFO client_side.py received response from server 200 : OK
+2020-03-20 15:17:14,731 DEBUG client_side.py process started
+2020-03-20 15:17:14,735 DEBUG decorators.py function helper with parameters: () and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:19:02,437 DEBUG decorators.py function argument_parser with parameters: () and {}, from module __main__, and function client_initializer().
+2020-03-20 15:19:02,437 INFO client_side.py client application was launched with parameters: server address: 127.0.0.1 port: 7777, mode: 1
+2020-03-20 15:19:02,437 INFO client_side.py client application was launched with parameters: server address: 127.0.0.1 port: 7777, mode: 2
+2020-03-20 15:19:02,438 DEBUG client_side.py formed presence message from user 2
+2020-03-20 15:19:02,438 DEBUG client_side.py formed presence message from user 1
+2020-03-20 15:19:02,439 DEBUG decorators.py function launch_presence with parameters: ('2',) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:19:02,439 DEBUG decorators.py function launch_presence with parameters: ('1',) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:19:02,439 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52075), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1584706742.4383938, 'user': {'account_name': '2'}}) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:19:02,439 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=704, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52074), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1584706742.4383938, 'user': {'account_name': '1'}}) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:19:02,440 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52075), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:19:02,440 DEBUG client_side.py analyzing server request: {'response': 200} 
+2020-03-20 15:19:02,440 DEBUG decorators.py function server_response with parameters: ({'response': 200},) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:19:02,440 INFO client_side.py received response from server 200 : OK
+2020-03-20 15:19:02,442 DEBUG client_side.py process started
+2020-03-20 15:19:02,443 DEBUG decorators.py function helper with parameters: () and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:19:02,941 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=704, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52074), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:19:02,941 DEBUG client_side.py analyzing server request: {'response': 200} 
+2020-03-20 15:19:02,941 DEBUG decorators.py function server_response with parameters: ({'response': 200},) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:19:02,941 INFO client_side.py received response from server 200 : OK
+2020-03-20 15:19:02,944 DEBUG client_side.py process started
+2020-03-20 15:19:02,945 DEBUG decorators.py function helper with parameters: () and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:19:10,170 DEBUG client_side.py message dict formed: {'action': 'message', 'from': '1', 'to': '2', 'time': 1584706750.1706858, 'message_text': 'hi'}
+2020-03-20 15:19:10,171 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=704, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52074), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': '1', 'to': '2', 'time': 1584706750.1706858, 'message_text': 'hi'}) and {}, from module shared.utilities, and function self._bootstrap_inner().
+2020-03-20 15:19:10,171 INFO client_side.py message to 2 was sent
+2020-03-20 15:19:10,172 DEBUG decorators.py function message_writer with parameters: (<socket.socket fd=704, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52074), raddr=('127.0.0.1', 7777)>, '1') and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:19:10,454 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=720, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52075), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function self._bootstrap_inner().
+2020-03-20 15:19:10,455 INFO client_side.py 
+ Received message from user 1: 
+ hi
+2020-03-20 15:21:19,406 DEBUG decorators.py function argument_parser with parameters: () and {}, from module __main__, and function client_initializer().
+2020-03-20 15:21:19,407 INFO client_side.py client application was launched with parameters: server address: 127.0.0.1 port: 7777, mode: 1
+2020-03-20 15:21:19,408 DEBUG client_side.py formed presence message from user 1
+2020-03-20 15:21:19,408 DEBUG decorators.py function launch_presence with parameters: ('1',) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:21:19,408 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=652, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52090), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1584706879.4088707, 'user': {'account_name': '1'}}) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:21:19,411 DEBUG decorators.py function argument_parser with parameters: () and {}, from module __main__, and function client_initializer().
+2020-03-20 15:21:19,412 INFO client_side.py client application was launched with parameters: server address: 127.0.0.1 port: 7777, mode: 2
+2020-03-20 15:21:19,413 DEBUG client_side.py formed presence message from user 2
+2020-03-20 15:21:19,413 DEBUG decorators.py function launch_presence with parameters: ('2',) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:21:19,414 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52091), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1584706879.4138565, 'user': {'account_name': '2'}}) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:21:19,414 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=652, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52090), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:21:19,415 DEBUG client_side.py analyzing server request: {'response': 200} 
+2020-03-20 15:21:19,415 DEBUG decorators.py function server_response with parameters: ({'response': 200},) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:21:19,415 INFO client_side.py received response from server 200 : OK
+2020-03-20 15:21:19,416 DEBUG client_side.py process started
+2020-03-20 15:21:19,418 DEBUG decorators.py function helper with parameters: () and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:21:19,919 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52091), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:21:19,920 DEBUG client_side.py analyzing server request: {'response': 200} 
+2020-03-20 15:21:19,921 DEBUG decorators.py function server_response with parameters: ({'response': 200},) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:21:19,921 INFO client_side.py received response from server 200 : OK
+2020-03-20 15:21:19,927 DEBUG client_side.py process started
+2020-03-20 15:21:19,931 DEBUG decorators.py function helper with parameters: () and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:21:27,040 DEBUG client_side.py message dict formed: {'action': 'message', 'from': '2', 'to': '2', 'time': 1584706887.0405228, 'message_text': 'hi'}
+2020-03-20 15:21:27,041 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52091), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': '2', 'to': '2', 'time': 1584706887.0405228, 'message_text': 'hi'}) and {}, from module shared.utilities, and function self._bootstrap_inner().
+2020-03-20 15:21:27,041 INFO client_side.py message to 2 was sent
+2020-03-20 15:21:27,041 DEBUG decorators.py function message_writer with parameters: (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52091), raddr=('127.0.0.1', 7777)>, '2') and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:21:27,435 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52091), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function self._bootstrap_inner().
+2020-03-20 15:21:27,435 INFO client_side.py 
+ Received message from user 2: 
+ hi
+2020-03-20 15:21:35,326 DEBUG client_side.py message dict formed: {'action': 'message', 'from': '2', 'to': '1', 'time': 1584706895.3263297, 'message_text': 'hi'}
+2020-03-20 15:21:35,327 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52091), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': '2', 'to': '1', 'time': 1584706895.3263297, 'message_text': 'hi'}) and {}, from module shared.utilities, and function self._bootstrap_inner().
+2020-03-20 15:21:35,327 INFO client_side.py message to 1 was sent
+2020-03-20 15:21:35,327 DEBUG decorators.py function message_writer with parameters: (<socket.socket fd=536, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52091), raddr=('127.0.0.1', 7777)>, '2') and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:21:35,449 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=652, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52090), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function self._bootstrap_inner().
+2020-03-20 15:21:35,451 INFO client_side.py 
+ Received message from user 2: 
+ hi
+2020-03-20 15:36:58,997 DEBUG decorators.py function argument_parser with parameters: () and {}, from module __main__, and function client_initializer().
+2020-03-20 15:36:58,997 INFO client_side.py client application was launched with parameters: server address: 127.0.0.1 port: 7777, mode: 1
+2020-03-20 15:36:58,998 DEBUG client_side.py formed presence message from user 1
+2020-03-20 15:36:58,999 DEBUG decorators.py function launch_presence with parameters: ('1',) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:36:58,999 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52447), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1584707818.9981847, 'user': {'account_name': '1'}}) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:36:59,003 DEBUG decorators.py function argument_parser with parameters: () and {}, from module __main__, and function client_initializer().
+2020-03-20 15:36:59,003 INFO client_side.py client application was launched with parameters: server address: 127.0.0.1 port: 7777, mode: 2
+2020-03-20 15:36:59,004 DEBUG client_side.py formed presence message from user 2
+2020-03-20 15:36:59,005 DEBUG decorators.py function launch_presence with parameters: ('2',) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:36:59,005 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=600, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52448), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1584707819.00417, 'user': {'account_name': '2'}}) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:36:59,006 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52447), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:36:59,006 DEBUG client_side.py analyzing server request: {'response': 200} 
+2020-03-20 15:36:59,006 DEBUG decorators.py function server_response with parameters: ({'response': 200},) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:36:59,006 INFO client_side.py received response from server 200 : OK
+2020-03-20 15:36:59,008 DEBUG client_side.py process started
+2020-03-20 15:36:59,009 DEBUG decorators.py function helper with parameters: () and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:36:59,507 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=600, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52448), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:36:59,508 DEBUG client_side.py analyzing server request: {'response': 200} 
+2020-03-20 15:36:59,508 DEBUG decorators.py function server_response with parameters: ({'response': 200},) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:36:59,508 INFO client_side.py received response from server 200 : OK
+2020-03-20 15:36:59,512 DEBUG client_side.py process started
+2020-03-20 15:36:59,513 DEBUG decorators.py function helper with parameters: () and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:37:06,655 DEBUG client_side.py message dict formed: {'action': 'message', 'from': '2', 'to': '2', 'time': 1584707826.6550765, 'message_text': 'hi'}
+2020-03-20 15:37:06,656 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=600, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52448), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': '2', 'to': '2', 'time': 1584707826.6550765, 'message_text': 'hi'}) and {}, from module shared.utilities, and function self._bootstrap_inner().
+2020-03-20 15:37:06,657 INFO client_side.py message to 2 was sent
+2020-03-20 15:37:06,657 DEBUG decorators.py function message_writer with parameters: (<socket.socket fd=600, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52448), raddr=('127.0.0.1', 7777)>, '2') and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:37:07,019 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=600, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52448), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function self._bootstrap_inner().
+2020-03-20 15:37:07,020 INFO client_side.py 
+ Received message from user 2: 
+ hi
+2020-03-20 15:39:26,674 DEBUG decorators.py function argument_parser with parameters: () and {}, from module __main__, and function client_initializer().
+2020-03-20 15:39:26,674 INFO client_side.py client application was launched with parameters: server address: 127.0.0.1 port: 7777, mode: 2
+2020-03-20 15:39:26,675 DEBUG decorators.py function argument_parser with parameters: () and {}, from module __main__, and function client_initializer().
+2020-03-20 15:39:26,676 INFO client_side.py client application was launched with parameters: server address: 127.0.0.1 port: 7777, mode: 1
+2020-03-20 15:39:26,676 DEBUG client_side.py formed presence message from user 2
+2020-03-20 15:39:26,676 DEBUG decorators.py function launch_presence with parameters: ('2',) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:39:26,676 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52463), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1584707966.6768255, 'user': {'account_name': '2'}}) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:39:26,677 DEBUG client_side.py formed presence message from user 1
+2020-03-20 15:39:26,677 DEBUG decorators.py function launch_presence with parameters: ('1',) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:39:26,677 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52464), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1584707966.6778233, 'user': {'account_name': '1'}}) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:39:26,678 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52463), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:39:26,678 DEBUG client_side.py analyzing server request: {'response': 200} 
+2020-03-20 15:39:26,678 DEBUG decorators.py function server_response with parameters: ({'response': 200},) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:39:26,678 INFO client_side.py received response from server 200 : OK
+2020-03-20 15:39:26,679 DEBUG client_side.py process started
+2020-03-20 15:39:26,680 DEBUG decorators.py function helper with parameters: () and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:39:27,182 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52464), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function client_initializer().
+2020-03-20 15:39:27,183 DEBUG client_side.py analyzing server request: {'response': 200} 
+2020-03-20 15:39:27,184 DEBUG decorators.py function server_response with parameters: ({'response': 200},) and {}, from module __main__, and function client_initializer().
+2020-03-20 15:39:27,184 INFO client_side.py received response from server 200 : OK
+2020-03-20 15:39:27,190 DEBUG client_side.py process started
+2020-03-20 15:39:27,194 DEBUG decorators.py function helper with parameters: () and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:39:34,933 DEBUG decorators.py function command_to_exit with parameters: ('1',) and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:39:34,933 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52464), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1584707974.9324446, 'account_name': '1'}) and {}, from module shared.utilities, and function self._bootstrap_inner().
+2020-03-20 15:39:34,934 INFO client_side.py process will be closed by user request
+2020-03-20 15:39:35,195 CRITICAL client_side.py connection with server was lost
+2020-03-20 15:39:35,196 DEBUG decorators.py function server_msg_handler with parameters: (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52464), raddr=('127.0.0.1', 7777)>, '1') and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:39:35,735 DEBUG decorators.py function user_online with parameters: (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52464), raddr=('127.0.0.1', 7777)>, '1') and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:39:37,019 DEBUG decorators.py function command_to_exit with parameters: ('2',) and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-20 15:39:37,020 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52463), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1584707977.0183337, 'account_name': '2'}) and {}, from module shared.utilities, and function self._bootstrap_inner().
+2020-03-20 15:39:37,021 INFO client_side.py process will be closed by user request
+2020-03-20 15:39:37,199 CRITICAL client_side.py connection with server was lost
+2020-03-20 15:39:37,200 DEBUG decorators.py function server_msg_handler with parameters: (<socket.socket fd=660, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 52463), raddr=('127.0.0.1', 7777)>, '2') and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-22 19:22:21,974 DEBUG decorators.py function argument_parser with parameters: () and {}, from module __main__, and function client_initializer().
+2020-03-22 19:22:21,974 INFO client_side.py client application was launched with parameters: server address: 127.0.0.1 port: 7777, mode: 1
+2020-03-22 19:22:22,478 DEBUG client_side.py formed presence message from user 1
+2020-03-22 19:22:22,478 DEBUG client_side.py formed presence message from user 2
+2020-03-22 19:22:22,479 DEBUG decorators.py function launch_presence with parameters: ('1',) and {}, from module __main__, and function client_initializer().
+2020-03-22 19:22:22,480 DEBUG decorators.py function launch_presence with parameters: ('2',) and {}, from module __main__, and function client_initializer().
+2020-03-22 19:22:22,481 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 57137), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1584894142.4781535, 'user': {'account_name': '1'}}) and {}, from module shared.utilities, and function client_initializer().
+2020-03-22 19:22:22,481 DEBUG decorators.py function send_message with parameters: (<socket.socket fd=688, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 57138), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1584894142.4781535, 'user': {'account_name': '2'}}) and {}, from module shared.utilities, and function client_initializer().
+2020-03-22 19:22:22,535 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=716, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 57137), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function client_initializer().
+2020-03-22 19:22:22,535 DEBUG client_side.py analyzing server request: {'response': 200} 
+2020-03-22 19:22:22,536 DEBUG decorators.py function server_response with parameters: ({'response': 200},) and {}, from module __main__, and function client_initializer().
+2020-03-22 19:22:22,536 INFO client_side.py received response from server 200 : OK
+2020-03-22 19:22:22,548 DEBUG client_side.py process started
+2020-03-22 19:22:22,563 DEBUG decorators.py function helper with parameters: () and {}, from module __main__, and function self._bootstrap_inner().
+2020-03-22 19:22:22,600 DEBUG decorators.py function get_message with parameters: (<socket.socket fd=688, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 57138), raddr=('127.0.0.1', 7777)>,) and {}, from module shared.utilities, and function client_initializer().
+2020-03-22 19:22:22,600 DEBUG client_side.py analyzing server request: {'response': 200} 
+2020-03-22 19:22:22,600 DEBUG decorators.py function server_response with parameters: ({'response': 200},) and {}, from module __main__, and function client_initializer().
+2020-03-22 19:22:22,600 INFO client_side.py received response from server 200 : OK
+2020-03-22 19:22:22,602 DEBUG client_side.py process started
+2020-03-22 19:22:22,604 DEBUG decorators.py function helper with parameters: () and {}, from module __main__, and function self._bootstrap_inner().

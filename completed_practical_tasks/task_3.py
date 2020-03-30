@@ -14,8 +14,9 @@ def host_range_ping_tab():
      of requested range of ip addresses
                tabulate view
     """
-    result_dict = diaposon_ip_checker(True)
-    print(tabulate([result_dict], headers='keys', tablefmt="pipe", stralign="center"))
+    result_dict = host_range_ping(True)
+    print(tabulate([result_dict], headers='keys', tablefmt="grid",
+                   stralign="center"))
 
 
 if __name__ == "__main__":

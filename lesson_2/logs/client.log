@@ -20,3 +20,32 @@
 2020-03-23 15:44:08,954 DEBUG client.py process launched
 2020-03-23 15:44:08,954 DEBUG decos.py called function get_message with params (<socket.socket fd=628, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 59216), raddr=('127.0.0.1', 7777)>,) , {}. Call from module shared.utils
 2020-03-23 15:44:08,955 DEBUG client.py process launched
+2020-03-30 08:59:50,851 DEBUG decos.py called function argument_parser with params () , {}. Call from module __main__
+2020-03-30 08:59:50,852 DEBUG decos.py called function argument_parser with params () , {}. Call from module __main__
+2020-03-30 08:59:50,853 INFO client.py client application was launched with parameters: server address: 127.0.0.1 port: 7777, mode: 2
+2020-03-30 08:59:50,853 INFO client.py client application was launched with parameters: server address: 127.0.0.1 port: 7777, mode: 1
+2020-03-30 08:59:51,856 DEBUG decos.py called function produce_presence with params ('2',) , {}. Call from module __main__
+2020-03-30 08:59:51,856 DEBUG client.py formed presence message from user 2
+2020-03-30 08:59:51,856 DEBUG decos.py called function send_message with params (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51991), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1585547991.856814, 'user': {'account_name': '2'}}) , {}. Call from module shared.utils
+2020-03-30 08:59:51,856 DEBUG decos.py called function get_message with params (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51991), raddr=('127.0.0.1', 7777)>,) , {}. Call from module shared.utils
+2020-03-30 08:59:51,857 DEBUG decos.py called function produce_presence with params ('1',) , {}. Call from module __main__
+2020-03-30 08:59:51,857 DEBUG client.py formed presence message from user 1
+2020-03-30 08:59:51,857 DEBUG decos.py called function send_message with params (<socket.socket fd=712, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51990), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1585547991.8578153, 'user': {'account_name': '1'}}) , {}. Call from module shared.utils
+2020-03-30 08:59:51,857 DEBUG decos.py called function get_message with params (<socket.socket fd=712, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51990), raddr=('127.0.0.1', 7777)>,) , {}. Call from module shared.utils
+2020-03-30 08:59:51,901 DEBUG decos.py called function server_response with params ({'response': 200},) , {}. Call from module __main__
+2020-03-30 08:59:51,901 DEBUG client.py analyzing server request: {'response': 200} 
+2020-03-30 08:59:51,902 INFO client.py received response from server 200 : OK
+2020-03-30 08:59:51,904 DEBUG decos.py called function get_message with params (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51991), raddr=('127.0.0.1', 7777)>,) , {}. Call from module shared.utils
+2020-03-30 08:59:51,904 DEBUG client.py process launched
+2020-03-30 08:59:51,948 DEBUG decos.py called function server_response with params ({'response': 200},) , {}. Call from module __main__
+2020-03-30 08:59:51,948 DEBUG client.py analyzing server request: {'response': 200} 
+2020-03-30 08:59:51,948 INFO client.py received response from server 200 : OK
+2020-03-30 08:59:51,949 DEBUG decos.py called function get_message with params (<socket.socket fd=712, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51990), raddr=('127.0.0.1', 7777)>,) , {}. Call from module shared.utils
+2020-03-30 08:59:51,950 DEBUG client.py process launched
+2020-03-30 09:00:00,489 DEBUG client.py message dict is formed: {'action': 'message', 'from': '2', 'to': '1', 'time': 1585548000.4894032, 'message_text': 'hui'}
+2020-03-30 09:00:00,489 DEBUG decos.py called function send_message with params (<socket.socket fd=568, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51991), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': '2', 'to': '1', 'time': 1585548000.4894032, 'message_text': 'hui'}) , {}. Call from module shared.utils
+2020-03-30 09:00:00,489 INFO client.py message to user 1 sent
+2020-03-30 09:00:00,996 INFO client.py 
+ Received message from user 2: 
+ hui
+2020-03-30 09:00:00,996 DEBUG decos.py called function get_message with params (<socket.socket fd=712, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 51990), raddr=('127.0.0.1', 7777)>,) , {}. Call from module shared.utils
