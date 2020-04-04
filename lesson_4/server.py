@@ -292,7 +292,7 @@ def server_launcher():
         try:
             port = int(config_window.port.text())
         except ValueError:
-            message.warning(config_window, 'Ошибка', 'Порт должен быть числом')
+            message.warning(config_window, 'Error', 'Port shall be a number')
         else:
             config['SETTINGS']['Listen_Address'] = config_window.ip.text()
             if 1023 < port < 65536:
@@ -301,24 +301,21 @@ def server_launcher():
                 with open('server.ini', 'w') as conf:
                     config.write(conf)
                     message.information(
-                        config_window, 'OK', 'Настройки успешно сохранены!')
+                        config_window, 'Ok', 'settings succesfully updated!')
             else:
                 message.warning(
                     config_window,
-                    'Ошибка',
-                    'Порт должен быть от 1024 до 65536')
+                    'Error',
+                    'Port shall be in diaposon between 1024 and 65536')
 
-    # Таймер, обновляющий список клиентов 1 раз в секунду
     timer = QTimer()
     timer.timeout.connect(list_update)
     timer.start(1000)
 
-    # Связываем кнопки с процедурами
     main_window.refresh_button.triggered.connect(list_update)
     main_window.show_history_button.triggered.connect(show_statistics)
     main_window.config_btn.triggered.connect(server_config)
 
-    # Запускаем GUI
     server_app.exec_()
 
 
