@@ -12,11 +12,9 @@ from client.transport import ClientTransport
 from client.main_window import ClientMainWindow
 from client.start_dialog import UserNameDialog
 
-# Инициализация клиентского логера
 logger = logging.getLogger('client')
 
 
-# Парсер аргументов коммандной строки
 @log
 def arg_parser():
     parser = argparse.ArgumentParser()
@@ -28,42 +26,35 @@ def arg_parser():
     server_port = namespace.port
     client_name = namespace.name
 
-    # проверим подходящий номер порта
     if not 1023 < server_port < 65536:
         logger.critical(
-            f'Попытка запуска клиента с неподходящим номером порта: {server_port}. Допустимы адреса с 1024 до 65535. Клиент завершается.')
+            f'Attempt to launch console with incorrect port number: {server_port}. '
+            f'Allowed values in ragne 1024 to 65535. Console closing.')
         exit(1)
 
     return server_address, server_port, client_name
 
 
-# Основная функция клиента
 if __name__ == '__main__':
-    # Загружаем параметы коммандной строки
     server_address, server_port, client_name = arg_parser()
 
-    # Создаём клиентокое приложение
     client_app = QApplication(sys.argv)
 
-    # Если имя пользователя не было указано в командной строке то запросим его
     if not client_name:
         start_dialog = UserNameDialog()
         client_app.exec_()
-        # Если пользователь ввёл имя и нажал ОК, то сохраняем ведённое и удаляем объект, инааче выходим
         if start_dialog.ok_pressed:
             client_name = start_dialog.client_name.text()
             del start_dialog
         else:
             exit(0)
 
-    # Записываем логи
     logger.info(
-        f'Запущен клиент с парамертами: адрес сервера: {server_address} , порт: {server_port}, имя пользователя: {client_name}')
+        f'console launched: server address: {server_address} ,'
+        f' port: {server_port}, name of user: {client_name}')
 
-    # Создаём объект базы данных
     database = ClientDatabase(client_name)
 
-    # Создаём объект - транспорт и запускаем транспортный поток
     try:
         transport = ClientTransport(server_port, server_address, database, client_name)
     except ServerError as error:
@@ -72,12 +63,10 @@ if __name__ == '__main__':
     transport.setDaemon(True)
     transport.start()
 
-    # Создаём GUI
     main_window = ClientMainWindow(database, transport)
     main_window.make_connection(transport)
-    main_window.setWindowTitle(f'Чат Программа alpha release - {client_name}')
+    main_window.setWindowTitle(f'MikeT chat program (alpha release) - {client_name}')
     client_app.exec_()
 
-    # Раз графическая оболочка закрылась, закрываем транспорт
     transport.transport_shutdown()
     transport.join()
