@@ -1,0 +1,45 @@
+Client module documentation
+=================================================
+
+
+client.py
+~~~~~~~~~
+
+
+database.py
+~~~~~~~~~~~~~~
+
+.. autoclass:: client.database.ClientDatabase
+	:members:
+
+transport.py
+~~~~~~~~~~~~~~
+
+.. autoclass:: client.transport.ClientTransport
+	:members:
+
+main_window.py
+~~~~~~~~~~~~~~
+
+.. autoclass:: client.main_window.ClientMainWindow
+	:members:
+
+start_dialog.py
+~~~~~~~~~~~~~~~
+
+.. autoclass:: client.start_dialog.UserNameDialog
+	:members:
+
+
+add_contact.py
+~~~~~~~~~~~~~~
+
+.. autoclass:: client.add_contact.AddContactDialog
+	:members:
+
+
+del_contact.py
+~~~~~~~~~~~~~~
+
+.. autoclass:: client.del_contact.DelContactDialog
+	:members:
